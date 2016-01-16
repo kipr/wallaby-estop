@@ -40,7 +40,7 @@ int main(int argc, char ** argv)
             if (event[0].value == 1)
             {
                 std::cout << "Stopping user botball programs\n" << std::endl;
-                system("killall --signal 2 botball_user_program"); // send SIGINT (2)
+                system("killall -s 2 botball_user_program"); // send SIGINT (2)
             }
         }
 
